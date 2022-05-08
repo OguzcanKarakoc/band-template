@@ -14,7 +14,7 @@ module.exports = {
     "vue/setup-compiler-macros": true,
   },
   rules: {
-    "prettier/prettier": ["error"],
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
   },
   overrides: [
     {
