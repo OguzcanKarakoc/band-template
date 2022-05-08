@@ -1,4 +1,3 @@
-/* eslint-env node */
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
@@ -7,9 +6,15 @@ module.exports = {
     "plugin:vue/vue3-essential",
     "eslint:recommended",
     "@vue/eslint-config-prettier",
+    "prettier",
   ],
+  plugins: ["prettier"],
   env: {
+    node: true,
     "vue/setup-compiler-macros": true,
+  },
+  rules: {
+    "prettier/prettier": ["error"],
   },
   overrides: [
     {
