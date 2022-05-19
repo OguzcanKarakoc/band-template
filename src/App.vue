@@ -6,15 +6,17 @@
   <main>
     <router-view />
   </main>
+
+  <TheFooter />
 </template>
 
 <script>
 import TheNavigation from "./components/TheNavigation.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
-  components: { TheNavigation },
+  components: { TheNavigation, TheFooter },
   data: () => ({
-    // [[label, routeName, childeren]]
     mainRoutes: [
       { label: "HOME", routeName: "home", children: undefined },
       { label: "BAND", routeName: "about", children: undefined },
